@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Netflix - Streaming & Sports Hub</title>
+    <script src="../js/header.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overflow: hidden;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Netflix</h1>
+    </header>
+    
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/sports">Sports</a>
+        <a href="/netflix">Netflix</a>
+        <a href="/hulu">Hulu</a>
+        <a href="/disney+">Disney+</a>
+        <a href="/about">About/Contact</a>
+    </nav><a href="/netflix">Netflix</a>
+        <a href="/hulu">Hulu</a>
+        <a href="/disney+">Disney+</a>
+    </nav>
+    
+    <div class="container mx-auto my-10 p-5 rounded-xl bg-gray-100 shadow-lg relative">
+        <iframe id="realframe" src="https://www.example.com" width="100%" height="600" class="rounded-xl" style="border: none;"></iframe>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">
+            <i class="fas fa-expand"></i>
+        </button>
+    </div>
+</body>
+<script>
+    window.onload = (event) => {
+        let url = 'netflix.com';
+        eval(atob('IGZ1bmN0aW9uIGdvdG8odXJsKSB7CiAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3JlYWxmcmFtZScpLnNyYyA9ICdodHRwczovL3ByeDJuZXctZHlsYW4tMjUteGp2OXptcXN0Zmtncm9oOGJ3cGNlZG55bGF1NjNoNzI4MS5uZXR0c3BlbmQubGl2ZS8/cnVybD0nICsgdXJsOwogICAgfQogICAgZ290byh1cmwpOw=='))
+    };
+    function toggleFullscreen() {
+        let iframe = document.getElementById('realframe');
+        if (!document.fullscreenElement) {
+            iframe.requestFullscreen().catch(err => console.log(err));
+        } else {
+            document.exitFullscreen();
+        }
+    }
+</script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Netflix - Streaming & Sports Hub</title>
+    <script src="../js/header.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overflow: hidden;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Netflix</h1>
+    </header>
+    
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/sports">Sports</a>
+        <a href="/netflix">Netflix</a>
+        <a href="/hulu">Hulu</a>
+        <a href="/disney+">Disney+</a>
+        <a href="/about">About/Contact</a>
+    </nav><a href="/netflix">Netflix</a>
+        <a href="/hulu">Hulu</a>
+        <a href="/disney+">Disney+</a>
+    </nav>
+    
+    <div class="container mx-auto my-10 p-5 rounded-xl bg-gray-100 shadow-lg relative">
+        <iframe id="realframe" src="https://www.example.com" width="100%" height="600" class="rounded-xl" style="border: none;"></iframe>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">
+            <i class="fas fa-expand"></i>
+        </button>
+    </div>
+</body>
+<script>
+    window.onload = (event) => {
+        let url = 'netflix.com';
+        eval(atob('IGZ1bmN0aW9uIGdvdG8odXJsKSB7CiAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3JlYWxmcmFtZScpLnNyYyA9ICdodHRwczovL3ByeDJuZXctZHlsYW4tMjUteGp2OXptcXN0Zmtncm9oOGJ3cGNlZG55bGF1NjNoNzI4MS5uZXR0c3BlbmQubGl2ZS8/cnVybD0nICsgdXJsOwogICAgfQogICAgZ290byh1cmwpOw=='))
+    };
+    function toggleFullscreen() {
+        let iframe = document.getElementById('realframe');
+        if (!document.fullscreenElement) {
+            iframe.requestFullscreen().catch(err => console.log(err));
+        } else {
+            document.exitFullscreen();
+        }
+    }
+</script>
+</html>
